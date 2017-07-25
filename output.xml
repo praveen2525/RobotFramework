@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170724 16:17:57.089" generator="Robot 3.0.2 (Python 2.7.9 on win32)">
+<suite source="C:\Users\preddyse\.jenkins\workspace\RobotTest\Mobile_Browser_robot.robot" id="s1" name="Mobile Browser robot">
+<test id="s1-t1" name="[TC-001]-Launching the browser and enter paytm credentials">
+<kw name="Launch Browser">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170724 16:17:57.542" level="INFO">Opening browser 'CHROME' to base url 'https://paytm.com/'</msg>
+<status status="PASS" endtime="20170724 16:18:50.627" starttime="20170724 16:17:57.542"></status>
+</kw>
+<status status="PASS" endtime="20170724 16:18:50.628" starttime="20170724 16:17:57.542"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<msg timestamp="20170724 16:19:05.640" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" endtime="20170724 16:19:05.640" starttime="20170724 16:18:50.628"></status>
+</kw>
+<kw name="Select login_option">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[text()='Log In/Sign Up']</arg>
+</arguments>
+<msg timestamp="20170724 16:19:05.640" level="INFO">Clicking element 'xpath=//div[text()='Log In/Sign Up']'.</msg>
+<status status="PASS" endtime="20170724 16:19:08.758" starttime="20170724 16:19:05.640"></status>
+</kw>
+<status status="PASS" endtime="20170724 16:19:08.759" starttime="20170724 16:19:05.640"></status>
+</kw>
+<kw name="Input Credentials">
+<kw name="Select Frame" library="Selenium2Library">
+<doc>Sets frame identified by `locator` as current frame.</doc>
+<arguments>
+<arg>tag=iframe</arg>
+</arguments>
+<msg timestamp="20170724 16:19:08.760" level="INFO">Selecting frame 'tag=iframe'.</msg>
+<status status="PASS" endtime="20170724 16:19:08.882" starttime="20170724 16:19:08.760"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=username</arg>
+</arguments>
+<msg timestamp="20170724 16:19:08.882" level="INFO">Clicking element 'name=username'.</msg>
+<status status="PASS" endtime="20170724 16:19:09.038" starttime="20170724 16:19:08.882"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=username</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20170724 16:19:09.038" level="INFO">Typing text '8892501639' into text field 'name=username'</msg>
+<status status="PASS" endtime="20170724 16:19:09.147" starttime="20170724 16:19:09.038"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=password</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20170724 16:19:09.147" level="INFO">Typing text 'praveen2525' into text field 'name=password'</msg>
+<status status="PASS" endtime="20170724 16:19:09.274" starttime="20170724 16:19:09.147"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=.//*[@id='loginForm']/div/md-content/button[1]</arg>
+</arguments>
+<msg timestamp="20170724 16:19:09.274" level="INFO">Clicking element 'xpath=.//*[@id='loginForm']/div/md-content/button[1]'.</msg>
+<status status="PASS" endtime="20170724 16:19:09.784" starttime="20170724 16:19:09.274"></status>
+</kw>
+<status status="PASS" endtime="20170724 16:19:09.785" starttime="20170724 16:19:08.759"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<msg timestamp="20170724 16:19:24.786" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" endtime="20170724 16:19:24.786" starttime="20170724 16:19:09.785"></status>
+</kw>
+<kw name="Collect OTP from Mobile">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=01157df154e0d21d</arg>
+<arg>automationName=appium</arg>
+<arg>appPackage=com.android.mms</arg>
+<arg>appActivity=.ui.ConversationComposer</arg>
+</arguments>
+<msg timestamp="20170724 16:19:26.801" level="INFO">Could not get IP address for host: localhost</msg>
+<kw name="Capture Page Screenshot">
+<msg timestamp="20170724 16:19:28.833" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    Selenium2Library.Capture Page Screenshot</msg>
+<status status="FAIL" endtime="20170724 16:19:28.833" starttime="20170724 16:19:28.833"></status>
+</kw>
+<msg timestamp="20170724 16:19:28.833" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    Selenium2Library.Capture Page Screenshot</msg>
+<msg timestamp="20170724 16:19:28.943" level="FAIL">URLError: &lt;urlopen error [Errno 10061] No connection could be made because the target machine actively refused it&gt;</msg>
+<status status="FAIL" endtime="20170724 16:19:28.943" starttime="20170724 16:19:24.786"></status>
+</kw>
+<status status="FAIL" endtime="20170724 16:19:28.943" starttime="20170724 16:19:24.786"></status>
+</kw>
+<status status="FAIL" endtime="20170724 16:19:28.958" critical="yes" starttime="20170724 16:17:57.542">URLError: &lt;urlopen error [Errno 10061] No connection could be made because the target machine actively refused it&gt;</status>
+</test>
+<status status="FAIL" endtime="20170724 16:19:28.974" starttime="20170724 16:17:57.104"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Mobile Browser robot" pass="0">Mobile Browser robot</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20170724 16:19:28.833" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    Selenium2Library.Capture Page Screenshot</msg>
+</errors>
+</robot>
