@@ -26,13 +26,14 @@ ${ele}     com.android.mms:id/list_item_text_view
     sleep    ${Delay}
     Collect OTP from Mobile
 	Input OTP
+	sleep    ${Delay}
 	
 
 	
 *** Keywords ***
 Launch Browser
     Open Browser    ${URL}  ${BROWSER}
-    #Maximize Browser Window
+    Maximize Browser Window
 	
 	
 Select login_option
