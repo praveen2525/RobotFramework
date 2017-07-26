@@ -65,7 +65,7 @@ Collect OTP from Mobile
     Set Test Variable    ${STATUS}
     log    ${STATUS}
 	${output}=    Get Substring     ${STATUS}   4    10
-	
+	sleep    ${Delay}
 	Set Test Variable    ${output}
 	log    ${output}
 	
